@@ -379,22 +379,26 @@ nav {
   margin: 1.3rem auto 2rem auto;
 }
 
-#contact-section a {
-  text-decoration: none;
-  color: $background-dark;
-  font-size: 1.2rem;
-  margin-bottom: 0.35rem;
-}
+#contact-section {
+  a {
+    text-decoration: none;
+    color: $background-dark;
+    font-size: 1.2rem;
+    margin-bottom: 0.35rem;
+  }
 
-#contact-section a:hover {
-  color: $link-color;
-  font-size: 1.5rem;
-  margin-bottom: 0;
-}
-
-#contact-section .fas {
-  color: $background-dark;
-  background-color: $background-light;
+  .fas,
+  .fab {
+    color: $background-dark;
+    background-color: $background-light;
+  }
+  a:hover,
+  a:hover .fab,
+  a:hover .fas {
+    color: $link-color;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
 }
 
 /*---------------------------------------------------------- Footer section-------------------------------------------------------- */

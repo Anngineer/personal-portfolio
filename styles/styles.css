@@ -416,15 +416,18 @@ nav #dropdown-button {
   margin-bottom: 0.35rem;
 }
 
-#contact-section a:hover {
+#contact-section .fas,
+#contact-section .fab {
+  color: #242423;
+  background-color: #f8f8f9;
+}
+
+#contact-section a:hover,
+#contact-section a:hover .fab,
+#contact-section a:hover .fas {
   color: #43b1b9;
   font-size: 1.5rem;
   margin-bottom: 0;
-}
-
-#contact-section .fas {
-  color: #242423;
-  background-color: #f8f8f9;
 }
 
 /*---------------------------------------------------------- Footer section-------------------------------------------------------- */
