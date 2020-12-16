@@ -391,6 +391,15 @@ nav {
     color: $background-dark;
     background-color: $background-light;
   }
+
+  a:active,
+  a:active .fab,
+  a:active .fas {
+    color: $link-color;
+    font-size: 1.2rem;
+    margin-bottom: 0.35rem;
+  }
+
   a:hover,
   a:hover .fab,
   a:hover .fas {
@@ -408,7 +417,6 @@ nav {
   height: 7rem;
   // color: #717174;
   // color: #a9a9ab;
-
   color: #8d8d8f;
 
   .image-reference {

@@ -422,6 +422,14 @@ nav #dropdown-button {
   background-color: #f8f8f9;
 }
 
+#contact-section a:active,
+#contact-section a:active .fab,
+#contact-section a:active .fas {
+  color: #43b1b9;
+  font-size: 1.2rem;
+  margin-bottom: 0.35rem;
+}
+
 #contact-section a:hover,
 #contact-section a:hover .fab,
 #contact-section a:hover .fas {
