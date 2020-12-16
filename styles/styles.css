@@ -14,7 +14,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 /* Setting the base properties for the entire page */
@@ -26,7 +26,7 @@ body {
   font-size: 1rem;
   font-family: "Source Sans Pro", sans-serif;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
   margin-left: auto;
   margin-right: auto;
@@ -48,17 +48,16 @@ nav {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #242423;
   z-index: 500;
   /*This makes sure that the nav is always visible on top of any other element*/
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
-    0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 /* base heading properties*/
@@ -95,8 +94,8 @@ nav #right-nav {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 nav #left-nav {
@@ -105,7 +104,7 @@ nav #left-nav {
 
 nav #right-nav {
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   width: 45vw;
 }
 
@@ -243,12 +242,10 @@ nav #dropdown-button {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "one two three"
-    "four five six";
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "one two three" "four five six";
   grid-gap: 30px;
   justify-items: center;
 }
@@ -403,11 +400,11 @@ nav #dropdown-button {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 40%;
   margin: 1.3rem auto 2rem auto;
 }
@@ -440,9 +437,8 @@ nav #dropdown-button {
 
 #footer .image-reference {
   text-align: right;
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
+  padding: 2rem;
+  line-height: 1.4;
 }
 
 #footer a {
@@ -464,14 +460,14 @@ nav #dropdown-button {
   nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* this shows the menu, is gets added to div#right-nav when the side button is clicked */
   }
   nav #left-nav {
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   nav #right-nav {
     display: -webkit-box;
@@ -479,8 +475,8 @@ nav #dropdown-button {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     display: none;
   }
@@ -493,8 +489,8 @@ nav #dropdown-button {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0.3rem 1rem 0.3rem 0;
   }
   nav #right-nav a div {
@@ -522,16 +518,16 @@ nav #dropdown-button {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-line-pack: center;
-    align-content: center;
+        align-content: center;
   }
   #introduction-section h1 {
     margin-top: 0;
@@ -546,16 +542,10 @@ nav #dropdown-button {
   }
   #portfolio-section .portfolio-grid {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "one"
-      "two"
-      "three"
-      "four"
-      "five"
-      "six";
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "one" "two" "three" "four" "five" "six";
   }
   #portfolio-section .portfolio-grid .grid-item-1 {
     -ms-grid-row: 1;
@@ -610,6 +600,9 @@ nav #dropdown-button {
   #contact-section a {
     font-size: 1rem;
   }
+  #footer .image-reference {
+    font-size: 0.8rem;
+  }
 }
 
 /* Iphone 0-350px */
@@ -640,6 +633,9 @@ nav #dropdown-button {
     margin: 0.5rem;
     font-weight: 450;
   }
+  #footer .image-reference {
+    font-size: 0.8rem;
+  }
 }
 
 /* --------------------Tablet Portrait Only (600px-899px)----------------*/
@@ -652,13 +648,10 @@ nav #dropdown-button {
   }
   #portfolio-section .portfolio-grid {
     -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "one two"
-      "three four"
-      "five six";
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "one two" "three four" "five six";
   }
   #portfolio-section .portfolio-grid .grid-item-1 {
     -ms-grid-row: 1;
@@ -731,6 +724,9 @@ nav #dropdown-button {
     transition: width 0.4s linear;
     max-width: 350px;
   }
+  #footer .image-reference {
+    font-size: 1rem;
+  }
 }
 
 /* --------------------------Big Desktop and Up (1600px+) -------------------*/
@@ -758,13 +754,11 @@ nav #dropdown-button {
 @media (min-width: 1600px) {
   #portfolio-section .portfolio-grid {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     grid-gap: 40px;
-    grid-template-areas:
-      "one two three four"
-      "five six . .";
+        grid-template-areas: "one two three four" "five six . .";
   }
   #portfolio-section .portfolio-grid .grid-item-1 {
     -ms-grid-row: 1;

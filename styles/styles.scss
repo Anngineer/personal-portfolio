@@ -409,9 +409,8 @@ nav {
 
   .image-reference {
     text-align: right;
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
+    padding: 2rem;
+    line-height: 1.4;
   }
   a {
     text-decoration: none;
@@ -538,6 +537,12 @@ nav {
       font-size: 1rem;
     }
   }
+
+  #footer {
+    .image-reference {
+      font-size: 0.8rem;
+    }
+  }
 }
 
 /* Iphone 0-350px */
@@ -565,6 +570,11 @@ nav {
       font-size: 0.875rem;
       margin: 0.5rem;
       font-weight: 450;
+    }
+  }
+  #footer {
+    .image-reference {
+      font-size: 0.8rem;
     }
   }
 }
@@ -639,6 +649,12 @@ nav {
     .portfolio-example {
       transition: width 0.4s linear;
       max-width: 350px;
+    }
+  }
+
+  #footer {
+    .image-reference {
+      font-size: 1rem;
     }
   }
 }
