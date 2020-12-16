@@ -84,7 +84,7 @@ nav a {
 
 nav a:hover {
   font-weight: 550;
-  color: #43b1b9;
+  color: #f8a883;
 }
 
 nav #left-nav,
@@ -328,7 +328,7 @@ nav #dropdown-button {
 }
 
 .portfolio-grid a:hover h3 {
-  color: #43b1b9;
+  color: #f8a883;
   font-weight: 500;
 }
 
@@ -417,7 +417,7 @@ nav #dropdown-button {
 }
 
 #contact-section a:hover {
-  color: #43b1b9;
+  color: #f8a883;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
@@ -437,9 +437,7 @@ nav #dropdown-button {
 
 #footer .image-reference {
   text-align: right;
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
+  padding: 2ren;
 }
 
 #footer a {
@@ -498,7 +496,7 @@ nav #dropdown-button {
     text-align: right;
   }
   nav #right-nav a:hover div {
-    color: #43b1b9;
+    color: #f8a883;
   }
   #introduction-section .intro-text-wrapper {
     -webkit-transition: margin 0.4s linear;
