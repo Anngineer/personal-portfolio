@@ -499,6 +499,9 @@ nav #dropdown-button {
   nav #right-nav a:hover div {
     color: #43b1b9;
   }
+  #introduction-section {
+    background-image: url(../images/adrienOlichonStripeSmall.jpg);
+  }
   #introduction-section .intro-text-wrapper {
     -webkit-transition: margin 0.4s linear;
     transition: margin 0.4s linear;
