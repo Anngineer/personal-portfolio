@@ -659,7 +659,19 @@ nav {
 /* ----------------------------PC (1200px-1600px)----------------------------- */
 
 @media (min-width: 1200px) and (max-width: 1599px) {
+  #introduction-section {
+    position: relative;
+    min-height: 29rem;
+    height: 80vh;
+    .intro-text-wrapper {
+      position: absolute;
+      left: 8rem;
+      bottom: -12rem;
+    }
+  }
+
   #portfolio-section {
+    position: relative;
     .portfolio-example {
       transition: width 0.4s linear;
       max-width: 350px;
@@ -677,13 +689,16 @@ nav {
 @media (min-width: 1600px) {
   #introduction-section {
     transition: height 0.4s linear;
-    height: 47rem;
+    min-height: 47rem;
+    height: 80vh;
+    position: relative;
 
     .intro-text-wrapper {
+      position: absolute;
       height: 36rem;
       width: 36rem;
-      margin-left: 15vw;
-      margin-top: 22rem;
+      left: 10vw;
+      bottom: -14rem;
     }
 
     h1 {
@@ -697,6 +712,7 @@ nav {
 }
 @media (min-width: 1600px) {
   #portfolio-section {
+    position: relative;
     .portfolio-grid {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;

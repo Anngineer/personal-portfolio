@@ -733,6 +733,19 @@ nav #dropdown-button {
 
 /* ----------------------------PC (1200px-1600px)----------------------------- */
 @media (min-width: 1200px) and (max-width: 1599px) {
+  #introduction-section {
+    position: relative;
+    min-height: 29rem;
+    height: 80vh;
+  }
+  #introduction-section .intro-text-wrapper {
+    position: absolute;
+    left: 8rem;
+    bottom: -12rem;
+  }
+  #portfolio-section {
+    position: relative;
+  }
   #portfolio-section .portfolio-example {
     -webkit-transition: width 0.4s linear;
     transition: width 0.4s linear;
@@ -748,13 +761,16 @@ nav #dropdown-button {
   #introduction-section {
     -webkit-transition: height 0.4s linear;
     transition: height 0.4s linear;
-    height: 47rem;
+    min-height: 47rem;
+    height: 80vh;
+    position: relative;
   }
   #introduction-section .intro-text-wrapper {
+    position: absolute;
     height: 36rem;
     width: 36rem;
-    margin-left: 15vw;
-    margin-top: 22rem;
+    left: 10vw;
+    bottom: -14rem;
   }
   #introduction-section h1 {
     margin-top: 11rem;
@@ -766,6 +782,9 @@ nav #dropdown-button {
 }
 
 @media (min-width: 1600px) {
+  #portfolio-section {
+    position: relative;
+  }
   #portfolio-section .portfolio-grid {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
