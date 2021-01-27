@@ -72,7 +72,7 @@ h2 {
 #portfolio-section,
 #contact-section {
   padding: 10px 15px;
-  width: 100vw;
+  width: 100%;
 }
 
 /*------ Navbar CSS------ */
