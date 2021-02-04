@@ -133,7 +133,9 @@ nav {
     padding: 0 1rem;
     border: none;
     display: none;
+
   }
+
 }
 
 /* dropdown button */
@@ -460,12 +462,17 @@ nav {
     #dropdown-button {
       display: inline-block;
     }
+      #dropdown-button:hover {
+        cursor: pointer;
+      }
+    }
     /* this shows the menu, is gets added to div#right-nav when the side button is clicked */
     #right-nav.dropdown {
       display: flex;
       flex-direction: column;
       padding: 0.3rem 1rem 0.3rem 0;
     }
+    
     // Customizing the menu
     #right-nav a div {
       text-align: right;
