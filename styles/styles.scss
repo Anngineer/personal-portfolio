@@ -105,7 +105,7 @@ nav {
     color: $text-light;
     font-size: 1.2rem;
     &:hover {
-      font-weight: 550;
+      // font-weight: 550;
       color: $link-color;
     }
   }
@@ -304,14 +304,18 @@ nav {
   width: 0;
 }
 
-.portfolio-grid a:hover .aqua-line-left,
-.portfolio-grid a:hover .aqua-line-right {
-  width: 35px;
-}
+
+// Comment: I just got rid of the aqua-line here because I don't know what the 
+// width of the actual titles are going to be and if it will look good or not to have that show up. 
+
+// .portfolio-grid a:hover .aqua-line-left,
+// .portfolio-grid a:hover .aqua-line-right {
+//   width: 10px;
+// }
 
 .portfolio-grid a:hover h3 {
   color: $link-color;
-  font-weight: 500;
+  // font-weight: 500;
 }
 
 .portfolio-example p {
@@ -406,7 +410,7 @@ nav {
   a:hover .fab,
   a:hover .fas {
     color: $link-color;
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
     margin-bottom: 0;
   }
 }
@@ -443,7 +447,11 @@ nav {
 
 /* ------------------------------MEDIA CALLS --------------------------------*/
 
+
 /* -------------------------Phone Only (0px-599px)---------------------*/
+
+
+
 
 @media (max-width: 599px) {
   nav {
@@ -480,7 +488,7 @@ nav {
     #right-nav a:hover div {
       color: $link-color;
     }
-  }
+  
 
   #introduction-section {
     background-image: url(../images/adrienOlichonStripeSmall2.jpg);
