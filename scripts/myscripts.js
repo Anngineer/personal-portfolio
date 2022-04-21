@@ -10,15 +10,15 @@ document
 
 // JS for closing drop down menu when a link is clicked
 const linkPortfolio = document.getElementById("link-portfolio");
-const linkAbout = document.getElementById("link-about");
+// const linkAbout = document.getElementById("link-about");
 const linkContact = document.getElementById("link-contact");
 
 linkPortfolio.addEventListener("click", () => {
   closeMenu();
 });
-linkAbout.addEventListener("click", () => {
-  closeMenu();
-});
+// linkAbout.addEventListener("click", () => {
+//   closeMenu();
+// });
 linkContact.addEventListener("click", () => {
   closeMenu();
 });

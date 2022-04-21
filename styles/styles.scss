@@ -1,14 +1,18 @@
 // SCSS Variables
 $link-color: #43b1b9;
 // $background-dark: #242423;
-$background-dark: #212121;
+// $background-dark: #212121;
+$background-dark: #1e1e1e;
 
 // $background-middle: #38383b;
-$background-middle: #212121;
+// $background-middle: #212121;
+$background-middle: #1e1e1e;
+
 $background-light: #f8f8f9;
 $text-light: #f2f2f3;
 $text-middle: #242423;
 $text-dark: #191919;
+$border-orange: #e35615;
 $font-title: Merriweather, serif;
 /* look into garamond, freight text, tiempos text, gt sectra  */
 $font-base: "Source Sans Pro", sans-serif;
@@ -285,9 +289,14 @@ nav {
 /* This stylizes the project cells */
 .portfolio-example {
   text-align: center;
-  padding: 15px 15px 35px 15px;
-  background-color: #363c3f;
-  background-color: #3f4244;
+  // padding: 15px 15px 35px 15px;
+  padding: 1.3rem 1.3rem 1.5rem 1.3rem;
+
+  // background-color: #363c3f;
+  // background-color: #3f4244;
+  // background-color: #444142;
+  background-color: #333333;
+  // background-color: #3d3d3d;
 
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
@@ -297,6 +306,29 @@ nav {
   width: 100%;
   height: 11rem;
 }
+
+.portfolio-example {
+  img.show-on-hover {
+    display: none;
+  }
+}
+.portfolio-example {
+  &:hover {
+    img.hide-on-hover {
+      display: none;
+    }
+    img.show-on-hover {
+      display: inline-block;
+    }
+  }
+}
+
+.portfolio-example p.tags {
+  text-align: center;
+  color: #f39c74;
+  padding-top: 1rem;
+}
+
 .portfolio-example h3 {
   padding: 1rem;
   font-weight: 400;
@@ -304,15 +336,15 @@ nav {
 }
 
 /* This is the part where it adds a line when it's hovered over */
-.aqua-line-left,
-.aqua-line-right {
-  display: inline-block;
-  position: relative;
-  bottom: 0.15rem;
-  width: 35px;
-  border-top: 3px solid #065767;
-  width: 0;
-}
+// .aqua-line-left,
+// .aqua-line-right {
+//   display: inline-block;
+//   position: relative;
+//   bottom: 0.15rem;
+//   width: 35px;
+//   border-top: 3px solid #065767;
+//   width: 0;
+// }
 
 // Comment: I just got rid of the aqua-line here because I don't know what the
 // width of the actual titles are going to be and if it will look good or not to have that show up.
@@ -362,22 +394,22 @@ nav {
 /* #e34815; */
 .contact-top {
   top: 0;
-  border-top: 6px solid#e34815;
+  border-top: 6px solid $border-orange;
 }
 
 .contact-bottom {
   bottom: 0;
-  border-bottom: 6px solid #e34815;
+  border-bottom: 6px solid $border-orange;
 }
 
 .contact-left {
   left: 0;
-  border-left: 6px solid #e34815;
+  border-left: 6px solid $border-orange;
 }
 
 .contact-right {
   right: 0;
-  border-right: 6px solid #e34815;
+  border-right: 6px solid $border-orange;
 }
 
 #contact-section h2 {
@@ -563,7 +595,7 @@ nav {
       font-size: 1.2rem;
     }
     .link-box {
-      width: 80%;
+      width: 70%;
       margin-top: 1.5rem;
     }
     a {
@@ -647,7 +679,7 @@ nav {
     .link-box {
       transition: margin 0.4s linear;
       margin-top: 1.5rem;
-      width: 80%;
+      width: 60%;
     }
     .contact-section-wrapper {
       width: 93.5%;
@@ -670,7 +702,7 @@ nav {
       width: 93.5%;
     }
     .link-box {
-      width: 60%;
+      width: 40%;
     }
   }
 }
