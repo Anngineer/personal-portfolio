@@ -1,7 +1,10 @@
 // SCSS Variables
 $link-color: #43b1b9;
-$background-dark: #242423;
-$background-middle: #38383b;
+// $background-dark: #242423;
+$background-dark: #212121;
+
+// $background-middle: #38383b;
+$background-middle: #212121;
 $background-light: #f8f8f9;
 $text-light: #f2f2f3;
 $text-middle: #242423;
@@ -133,9 +136,7 @@ nav {
     padding: 0 1rem;
     border: none;
     display: none;
-
   }
-
 }
 
 /* dropdown button */
@@ -156,7 +157,9 @@ nav {
   color: $text-middle;
   background-color: $background-dark;
   /*This is a fallback if background-image doesn't load */
-  background-image: url(../images/adrienOlichonStripe.jpg);
+  // background-image: url(../images/adrienOlichonStripe.jpg);
+  background-image: url(../images/3a.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -175,6 +178,10 @@ nav {
   border-radius: 100%; /*This makes it a circle*/
   display: block;
   background-color: #f8a883;
+  background-color: #f39c74;
+
+  box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
+
   /* other colors I considered were #f6b597;,#f8b08f;, and #242423; */
 }
 
@@ -279,8 +286,11 @@ nav {
 .portfolio-example {
   text-align: center;
   padding: 15px 15px 35px 15px;
-  background-color: #151515;
+  background-color: #363c3f;
+  background-color: #3f4244;
+
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 8px;
 }
 
 .portfolio-example img {
@@ -304,9 +314,8 @@ nav {
   width: 0;
 }
 
-
-// Comment: I just got rid of the aqua-line here because I don't know what the 
-// width of the actual titles are going to be and if it will look good or not to have that show up. 
+// Comment: I just got rid of the aqua-line here because I don't know what the
+// width of the actual titles are going to be and if it will look good or not to have that show up.
 
 // .portfolio-grid a:hover .aqua-line-left,
 // .portfolio-grid a:hover .aqua-line-right {
@@ -447,11 +456,7 @@ nav {
 
 /* ------------------------------MEDIA CALLS --------------------------------*/
 
-
 /* -------------------------Phone Only (0px-599px)---------------------*/
-
-
-
 
 @media (max-width: 599px) {
   nav {
@@ -470,28 +475,27 @@ nav {
     #dropdown-button {
       display: inline-block;
     }
-      #dropdown-button:hover {
-        cursor: pointer;
-      }
+    #dropdown-button:hover {
+      cursor: pointer;
     }
-    /* this shows the menu, is gets added to div#right-nav when the side button is clicked */
-    #right-nav.dropdown {
-      display: flex;
-      flex-direction: column;
-      padding: 0.3rem 1rem 0.3rem 0;
-    }
-    
-    // Customizing the menu
-    #right-nav a div {
-      text-align: right;
-    }
-    #right-nav a:hover div {
-      color: $link-color;
-    }
-  
+  }
+  /* this shows the menu, is gets added to div#right-nav when the side button is clicked */
+  #right-nav.dropdown {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 1rem 0.3rem 0;
+  }
+
+  // Customizing the menu
+  #right-nav a div {
+    text-align: right;
+  }
+  #right-nav a:hover div {
+    color: $link-color;
+  }
 
   #introduction-section {
-    background-image: url(../images/adrienOlichonStripeSmall2.jpg);
+    background-image: url(../images/3smalld.jpg);
 
     .intro-text-wrapper {
       transition: margin 0.4s linear;
