@@ -1,6 +1,6 @@
 # personal-portfolio
 
-This repository contains summaries and links to Ann Bridge's current web development projects.
+This repository contains summaries and links to my current web development projects.
 
 ## Details
 
