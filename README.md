@@ -10,4 +10,4 @@ This project was built in VSCode with HTML, SCSS/CSS, and vanilla JavaScript. Mo
 
 ## Contact
 
-Please feel free to contact me at Anngineer@gmail.com in regards to my work or future projects.
+Please feel free to contact me at me at [LinkedIn](www.linkedin.com/in/anngineer) in regards to my work or future projects.
